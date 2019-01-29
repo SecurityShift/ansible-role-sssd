@@ -7,3 +7,9 @@
     state: installed
   tags:
     - install
+
+- name: Start and enable the sssd service
+  service:
+    name: sssd
+    enabled: yes
+    state: started
