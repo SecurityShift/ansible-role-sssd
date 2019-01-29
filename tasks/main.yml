@@ -1,0 +1,9 @@
+---
+# tasks file for sssd
+
+- name: Install SSSD and related packages
+  yum:
+    name: awscli
+    state: installed
+  tags:
+    - install
