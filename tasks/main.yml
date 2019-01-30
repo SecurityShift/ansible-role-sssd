@@ -3,7 +3,7 @@
 
 - name: Install SSSD and related packages
   yum:
-    name: awscli
+    name: '{{ sssd_packages }}'
     state: installed
   tags:
     - install
